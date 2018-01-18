@@ -5,6 +5,7 @@ class PigLatinizer
   end
 
   def to_pig_latin(phrase)
+    # downcase the phrase
     # split into array
     # run a method on each word
     # join back into a string
