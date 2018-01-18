@@ -6,8 +6,8 @@ class App < Sinatra::Base
     erb :user_input
   end
 
-  post '/' do
-    @user_input = params[:input]
+  post '/user_input' do
+    @user_input = params[:user_phrase]
     erb :pig_latinized
   end
 
