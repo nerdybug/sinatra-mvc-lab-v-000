@@ -7,7 +7,8 @@ class App < Sinatra::Base
   end
 
   post '/' do
+    @user_input = params[:input]
     erb :pig_latinized
   end
-  
+
 end
