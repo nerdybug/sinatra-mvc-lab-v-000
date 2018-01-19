@@ -14,8 +14,8 @@ class PigLatinizer
 
   def to_pig_latin(phrase)
     words = phrase.split(" ")
-    # run a method on each word
-    # join back into a string
+    pig_latinized_words = words.collect { |word| pig_latinize_this(word) }
+    pig_latinized_words.join(" ")
   end
 
 end
