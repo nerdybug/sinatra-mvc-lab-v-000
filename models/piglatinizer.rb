@@ -1,8 +1,8 @@
 class PigLatinizer
 
   def pig_latinize_this(word)
-    if condition #the word starts with a vowel
-
+    if word.match(/^[aeiouAEIOU]/) #the word starts with a vowel
+      word = "#{word}" + "way"
     else #the word starts with a consonant
       split = word.split(/([aeiouAEIOU].*)/)
       # split[0] => the consonants at the beginning of the word
